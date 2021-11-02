@@ -1,0 +1,21 @@
+.hero {
+  padding-top: 220px;
+  padding-bottom: 354px;
+  background-image: url("../img/bg-image.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: $color-darkgray; //если вдруг пропадет картинка будет сер{ый фон чтоб был ыиден текст
+
+  &__content {
+    max-width: 577px;
+  }
+
+  &__btns {
+    .btn {
+      &:not(:last-child) {
+        margin-right: 20px;
+      }
+    }
+  }
+}

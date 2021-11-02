@@ -10,7 +10,8 @@ html {
 
 body {
   margin: 0;
-  font-family: "asd", sans-serif;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
 }
 
 img {
@@ -45,9 +46,92 @@ a {
 .container {
   margin: 0 auto;
   padding: 0 15px;
-  max-width: 1200px;
+  max-width: 1260px; //1230 + 15 + 15 (padding с двух сторон чтобы контент не прилипал к краям)
 }
 
 .js-focus-visible :focus:not(.focus-visible) {
   outline: none;
+}
+
+.main-title {
+  margin: 0;
+  margin-bottom: 24px;
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 130%;
+  letter-spacing: 1px;
+  color: $color-darkgray;
+  text-transform: uppercase;
+
+  span {
+    color: $color-primary;
+  }
+
+  &--home {
+    color: $color-white;
+  }
+}
+
+.main-description {
+  margin: 0;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 150%;
+  color: $color-lightgray;
+
+  &--home {
+    margin-bottom: 62px;
+    color: $color-white;
+  }
+}
+
+.btn {
+  border: 1px solid transparent;
+  border-radius: 4px;
+  padding: 15px 39px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  color: $color-white;
+
+  &--stroke {
+    &-white {
+      border-color: $color-white;
+    }
+  }
+
+  &--fill {
+    background-color: $color-primary;
+  }
+}
+
+.title {
+  margin: 0;
+  margin-bottom: 25px;
+  font-weight: 700;
+  font-size: 46px;
+  line-height: 130%;
+  color: $color-darkgray;
+
+  &--center {
+    text-align: center;
+  }
+}
+
+.description {
+  margin: 0;
+  margin-bottom: 60px;
+  font-size: 18px;
+  line-height: 150%;
+  color: $color-lightgray;
+
+  &--center {
+    text-align: center;
+  }
+}
+
+.section-offset {
+  padding-top: 120px;
 }
