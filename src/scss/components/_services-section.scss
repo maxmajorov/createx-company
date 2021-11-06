@@ -1,7 +1,128 @@
 .services-section {
   padding-top: 212px;
+  padding-bottom: 80px;
   background-image: url("../../img/services-bg.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+
+  &__list {
+    margin-bottom: 80px;
+  }
+
+  &__learn {
+    @include flex-all-center;
+  }
+
+  &__subtitle {
+    margin: 0;
+    margin-right: 40px;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 150%;
+    color: $color-darkgray;
+  }
+}
+
+.services-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+
+.services-item {
+  position: relative;
+  display: block;
+  border: 1px solid #e5e8ed;
+  border-radius: 4px;
+  padding: 0 10px;
+  padding-top: 87px;
+  padding-bottom: 90px;
+  box-shadow: 0 80px 80px -20px rgba(154, 156, 165, 0.08),
+    0 30px 24px -10px rgba(154, 156, 165, 0.05),
+    0 12px 10px -6px rgba(154, 156, 165, 0.04),
+    0 4px 4px -4px rgba(30, 33, 44, 0.03);
+  background: $color-white;
+
+  &::before {
+    content: "";
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    top: 0;
+    z-index: 3;
+    border-radius: inherit;
+    background-image: url("../../img/services-item.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 5;
+    border-radius: 4px;
+    background-color: rgba($color-darkgray, 0.6);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+
+  &__content {
+    @include flex-column-center;
+
+    position: relative;
+    z-index: 10;
+  }
+
+  &__icon {
+    margin-bottom: 24px;
+    width: 52px;
+    height: 52px;
+    fill: $color-primary;
+    object-fit: cover;
+    transition: fill 0.3s ease-in-out;
+  }
+
+  &__title {
+    margin: 0;
+    font-weight: 700;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 150%;
+    text-align: center;
+    color: $color-darkgray;
+    transition: color 0.3s ease-in-out;
+  }
+
+  &--construct {
+    &::before {
+      background-image: url("../../img/services-item.jpg");
+    }
+  }
+
+  &:hover {
+    &::before {
+      opacity: 1;
+    }
+
+    &::after {
+      opacity: 1;
+    }
+
+    .services-item__icon {
+      fill: $color-white;
+    }
+
+    .services-item__title {
+      color: $color-white;
+    }
+  }
 }
