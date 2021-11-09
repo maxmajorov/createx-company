@@ -21,6 +21,17 @@
   &__items {
     margin: -50px;
     padding: 50px;
+
+    .swiper-slide {
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+    }
+
+    .slider-visible {
+      opacity: 1;
+      visibility: visible;
+    }
   }
 }
 
