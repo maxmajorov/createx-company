@@ -18,6 +18,7 @@ if (portSlider) {
         nextNextActiveSlide.classList.add('slider-visible');
       },
     },
+    loop: true,
     navigation: {
       nextEl: '.portfolio-section__next',
       prevEl: '.portfolio-section__prev',

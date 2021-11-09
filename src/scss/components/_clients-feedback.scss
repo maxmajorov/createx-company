@@ -1,9 +1,13 @@
 .clients-feedback {
-  padding: 99px 0;
+  padding-top: 97px;
   background-color: #f4f5f7;
 
   &__content {
     max-width: 600px;
+  }
+
+  &__image {
+    margin-bottom: -60px;
   }
 
   &__title {
