@@ -21,10 +21,24 @@
     &::placeholder {
       color: #9a9ca5;
     }
+
+    &--big {
+      padding-top: 11px;
+      height: 66px;
+      resize: none;
+    }
   }
 
   &--big {
     flex-grow: 1;
+
+    .form-field__input {
+      width: 100%;
+    }
+  }
+
+  &--contacts-input {
+    width: 100%;
 
     .form-field__input {
       width: 100%;
