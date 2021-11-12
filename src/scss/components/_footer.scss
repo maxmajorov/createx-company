@@ -1,0 +1,48 @@
+.footer {
+  padding: 80px 0;
+  color: rgba($color-white, 0.6);
+  background-color: $color-darkgray;
+
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 50px;
+  }
+
+  &__left {
+    grid-column: 7 span;
+  }
+
+  &__logo {
+    margin-right: 60px;
+  }
+
+  &__top {
+    @include flex-v-center;
+    margin-bottom: 24px;
+  }
+
+  &__description {
+    margin: 0;
+    width: 100%;
+    max-width: 495px;
+    font-size: 14px;
+    line-height: 150%;
+  }
+
+  &__form {
+    grid-column: 5 span;
+  }
+
+  &__adress {
+    grid-column: 4 span;
+  }
+
+  &__navigation {
+    grid-column: 8 span;
+  }
+
+  &__copyright {
+    grid-column: 12 span;
+  }
+}
