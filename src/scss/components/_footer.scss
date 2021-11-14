@@ -6,7 +6,7 @@
   &__container {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    gap: 50px;
+    gap: 30px;
   }
 
   &__left {
@@ -43,6 +43,123 @@
   }
 
   &__copyright {
+    padding-top: 28px;
     grid-column: 12 span;
+    font-size: 12px;
+    line-height: 150%;
+    color: $color-white;
+
+    span {
+      padding: 22px;
+      background-image: url("../../img/Heart.svg");
+      background-position: 2px center;
+      background-size: 16px 16px;
+      background-repeat: no-repeat;
+    }
+  }
+}
+
+.footer-form {
+  &__title {
+    margin: 0;
+    margin-bottom: 24px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 150%;
+    color: $color-white;
+  }
+
+  &__items {
+    @include flex-v-center;
+    margin-bottom: 16px;
+  }
+
+  &__btn {
+    // border-top-left-radius: 0;           //почему-то пропадает заливка
+    // border-bottom-left-radius: 0;
+    padding: 11px 24px;
+    letter-spacing: normal;
+  }
+
+  .form-field {
+    margin: 0;
+    width: 364px;
+  }
+
+  .form-field__input {
+    //   border-top-right-radius: 0;      //почему-то пропадает заливка
+    //   border-bottom-right-radius: 0;
+    background: rgba(255, 255, 255, 0.12);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+
+    &::placeholder {
+      font-size: 14px;
+      line-height: 150%;
+      color: $color-white;
+      opacity: 0.6;
+    }
+  }
+
+  &__description {
+    margin: 0;
+    font-size: 12px;
+    line-height: 150%;
+  }
+}
+
+.footer-title {
+  margin: 0;
+  margin-bottom: 15px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: $color-white;
+}
+
+.footer-adress {
+  padding-top: 20px;
+
+  &__item {
+    display: block;
+    font-size: 16px;
+    line-height: 160%;
+
+    &:not(:last-child) {
+      margin-bottom: 4px;
+    }
+
+    a {
+      color: inherit;
+    }
+  }
+
+  &__name {
+    color: $color-white;
+  }
+}
+
+.footer-navigation {
+  display: flex;
+  padding-top: 20px;
+  padding-left: 54px;
+
+  &__col {
+    &:not(:last-child) {
+      margin-right: 125px;
+    }
+  }
+
+  &__item {
+    &:not(:last-child) {
+      margin-bottom: 4px;
+    }
+  }
+
+  &__link {
+    font-size: 16px;
+    line-height: 160%;
+    color: inherit;
   }
 }
