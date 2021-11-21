@@ -1,0 +1,86 @@
+.benefits {
+  padding-top: 80px;
+  padding-bottom: 45px;
+  background-color: $color-darkgray;
+
+  .title {
+    color: $color-white;
+  }
+
+  .description {
+    color: $color-white;
+    opacity: 0.6;
+  }
+
+  &__list {
+    $mission-gap: 94px;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); //3 части по 33.33%
+    margin-bottom: 30px;
+    gap: calc($mission-gap * 2);
+  }
+
+  &__item {
+    padding-top: 70px;
+    text-align: center;
+    background-position: top center;
+    background-size: 48px 48px;
+    background-repeat: no-repeat;
+
+    &:not(:last-child) {
+      &::after {
+        content: "";
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 1px;
+        height: 100%;
+        background-image: url("../../img/devider.svg"); //чегото не вставляется
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+    }
+
+    &--cost {
+      background-image: url("../../img/cost.svg");
+    }
+
+    &--workers {
+      background-image: url("../../img/workers.svg");
+    }
+
+    &--control {
+      background-image: url("../../img/control.svg");
+    }
+  }
+
+  &__subtitle {
+    margin: 0;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 150%;
+    color: $color-white;
+  }
+
+  &__description {
+    padding-top: 8px;
+    margin: 0;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;
+    color: $color-white;
+    opacity: 0.6;
+  }
+
+  &__centered {
+    position: relative;
+    top: 70px;
+
+    button {
+      padding: 15px 110px;
+    }
+  }
+}
