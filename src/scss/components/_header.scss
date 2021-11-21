@@ -9,4 +9,15 @@
   &__nav {
     margin-left: -105px;
   }
+
+  &--main {
+    background-color: $color-white;
+  }
+
+  &--secondary {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+  }
 }
