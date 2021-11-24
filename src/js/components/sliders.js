@@ -68,7 +68,8 @@ if (portSlider) {
 if (relatedSlider) {
   const relatedProjSlider = new Swiper(relatedSlider, {
     slidesPerView: 1,
-    spaceBetween: gap,
+    spaceBetween: 30,
+    loop: true, 
     on: {
       init: function () {
         const activeSlide = relatedSlider.querySelector('.swiper-slide-active');

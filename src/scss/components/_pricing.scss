@@ -1,0 +1,121 @@
+.pricing {
+  position: relative;
+  z-index: -1;
+  padding-top: 80px;
+  padding-bottom: 42px;
+  background-color: #f4f5f7;
+
+  &__decorate {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+
+  &__description {
+    margin-bottom: 60px;
+  }
+}
+
+.table-wrapper {
+  border: 1px solid #e5e8ed;
+  box-sizing: border-box;
+  width: 100%;
+  box-shadow: 0 80px 80px -20px rgba(154, 156, 165, 0.08),
+    0 30px 24px -10px rgba(154, 156, 165, 0.05),
+    0 12px 10px -6px rgba(154, 156, 165, 0.04),
+    0 4px 4px -4px rgba(30, 33, 44, 0.03);
+  border-radius: 4px;
+  background-color: $color-white;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse; //убираем все отступы
+
+  &__heading {
+    margin-bottom: 2px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 150%;
+    text-transform: uppercase;
+    color: $color-darkgray;
+  }
+
+  &__cost {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 150%;
+    color: $color-lightgray;
+  }
+
+  &__th {
+    padding-top: 30px;
+    padding-bottom: 24px;
+
+    &:first-child {
+      padding-left: 20px;
+      padding-right: 20px;
+      text-align: left;
+      vertical-align: bottom;
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 150%;
+      color: $color-darkgray;
+    }
+  }
+
+  &__body {
+    .table__row {
+      &:nth-child(odd) {
+        background-color: #f4f5f7;
+      }
+
+      &:last-child {
+        .table__col {
+          padding-top: 26px;
+          padding-bottom: 29px;
+        }
+      }
+    }
+  }
+
+  &__col {
+    padding: 16px 0;
+    text-align: center;
+    font-size: 16px;
+    line-height: 160%;
+    color: $color-gray;
+
+    .btn {
+      padding: 0 25px;
+      font-weight: 700;
+      font-size: 12px;
+      line-height: 36px;
+      letter-spacing: 0.5px;
+    }
+
+    &:first-child {
+      text-align: left;
+      padding-left: 20px;
+    }
+  }
+
+  &__check {
+    display: inline-block;
+    vertical-align: middle;
+    width: 24px;
+    height: 24px;
+    font-size: 0;
+    background-image: url("../../img/table-check.svg");
+    background-repeat: no-repaet;
+    background-position: center;
+    background-size: cover;
+  }
+
+  &__text {
+    font-size: 16px;
+    line-height: 160%;
+    color: $color-gray;
+  }
+}
