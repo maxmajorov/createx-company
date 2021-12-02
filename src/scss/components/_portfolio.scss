@@ -35,6 +35,7 @@
     &--active {
       color: $color-white;
       background-color: $color-primary;
+      pointer-events: none;
 
       .portfolio-tabs-nav__text {
         color: $color-white;
@@ -50,6 +51,7 @@
     color: inherit;
     fill: currentColor;
     object-fit: cover;
+    pointer-events: none;
   }
 
   &__text {
@@ -58,6 +60,7 @@
     line-height: 160%;
     color: #9a9ca5;
     transition: color 0.3s ease-in-out;
+    pointer-events: none;
   }
 }
 
@@ -67,6 +70,14 @@
 
   &__item {
     grid-column: 4 span;
+
+    // &:nth-child(n + 10) {
+    //   display: none; //все элементы больше 9 пропадут
+    // }
+
+    &--visible {
+      display: block !important;
+    }
   }
 }
 
