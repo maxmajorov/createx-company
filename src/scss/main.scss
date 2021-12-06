@@ -31,6 +31,8 @@
 
 @import "./components/portfolio";
 @import "./components/clients";
+@import "./components/project-goal";
+@import "./components/decisions";
 
 // подключения компонентов страницы (Маленькие компоненты)
 @import "./components/nav";
@@ -40,3 +42,4 @@
 @import "./components/learn-more";
 @import "./components/social";
 @import "./components/breadcrumbs";
+@import "./components/work-images";
