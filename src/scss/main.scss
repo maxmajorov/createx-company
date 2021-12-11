@@ -34,6 +34,9 @@
 @import "./components/project-goal";
 @import "./components/decisions";
 
+@import "./components/achieve"; //about-us => достижения
+@import "./components/about-mission";
+
 // подключения компонентов страницы (Маленькие компоненты)
 @import "./components/nav";
 @import "./components/header-contacts";
