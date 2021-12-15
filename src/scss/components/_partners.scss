@@ -12,4 +12,13 @@
     grid-template-columns: repeat(6, 1fr);
     gap: 102px;
   }
+
+  &--about {
+    padding: 120px 0;
+    background-color: $color-white;
+
+    .partners__title {
+      margin-bottom: 25px;
+    }
+  }
 }

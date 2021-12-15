@@ -184,16 +184,15 @@ if (historySlider) {
   });
 
   workSlider.on('slideChange', function () {
-    console.log(workSlider.realIndex);
-
+    
     historyBtns.forEach(el => {
-      el.classList.remove('history-nav__btn--active');
+      el.classList.remove('history-navigation__btn--active');
     });
 
-    document.querySelector(`.history-nav__btn[data-index="${workSlider.realIndex}"]`).classList.add('history-nav__btn--active');
+    document.querySelector(`.history-navigation__btn[data-index="${workSlider.realIndex}"]`).classList.add('history-navigation__btn--active');
   });
 
-  const historyBtns = document.querySelectorAll('.history-nav__btn');
+  const historyBtns = document.querySelectorAll('.history-navigation__btn');
 
   historyBtns.forEach((el, idx) => {
     el.setAttribute('data-index', idx);
@@ -202,10 +201,10 @@ if (historySlider) {
       const index = e.currentTarget.dataset.index;
 
       historyBtns.forEach(el => {
-        el.classList.remove('history-nav__btn--active');
+        el.classList.remove('history-navigation__btn--active');
       });
 
-      e.currentTarget.classList.add('history-nav__btn--active');
+      e.currentTarget.classList.add('history-navigation__btn--active');
 
       workSlider.slideTo(index);
     });
