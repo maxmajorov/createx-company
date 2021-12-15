@@ -10,7 +10,8 @@
   &__list {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    gap: 102px;
+    column-gap: 102px;
+    row-gap: 40px;
   }
 
   &--about {
@@ -18,7 +19,7 @@
     background-color: $color-white;
 
     .partners__title {
-      margin-bottom: 25px;
+      margin-bottom: -35px;
     }
   }
 }
