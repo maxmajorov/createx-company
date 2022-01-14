@@ -85,4 +85,9 @@
       text-transform: initial;
     }
   }
+
+  &--contacts {
+    background-image: url("../img/contacts-bg.png");
+    background-position: right -9px bottom;
+  }
 }
