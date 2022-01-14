@@ -74,4 +74,15 @@
     background-color: #f4f5f7;
     background-position: right -9px bottom;
   }
+
+  &--post {
+    .page-hero__title {
+      margin-bottom: 48px;
+      max-width: none;
+      font-size: 64px;
+      line-height: 120%;
+      letter-spacing: 1px;
+      text-transform: initial;
+    }
+  }
 }

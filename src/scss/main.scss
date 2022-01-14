@@ -45,6 +45,9 @@
 
 @import "./components/categories";
 
+@import "./components/post-item";
+@import "./components/post-comments";
+@import "./components/post-form";
 // подключения компонентов страницы (Маленькие компоненты)
 @import "./components/nav";
 @import "./components/header-contacts";
